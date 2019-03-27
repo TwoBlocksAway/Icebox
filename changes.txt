@@ -1,0 +1,20 @@
+Icebox changes file
+
+
+--------------------------------------
+Mar, 26 2019
+
+Total commits: 1
+
+COMMIT 1
+- Added:
+- temporary favicon img
+- nav component
+- home component
+- log file
+
+Changed:
+- css - font style,  
+- application name
+- landing page layout
+--------------------------------------

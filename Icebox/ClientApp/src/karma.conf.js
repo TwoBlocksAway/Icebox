@@ -10,14 +10,22 @@ module.exports = function (config) {
             require('karma-chrome-launcher'),
             require('karma-jasmine-html-reporter'),
             require('karma-coverage-istanbul-reporter'),
-            require('@angular-devkit/build-angular/plugins/karma')
+            require('@angular-devkit/build-angular/plugins/karma'),
+            require('karma-scss-preprocessor')
         ],
-        files: [
-            { pattern: './src/app/home/home.component.scss', watch: true, included: true, served: true },
+        //files: [
+        //    { pattern: './app/home/home.component.scss', watched: true, included: true, served: true },
+        //    { pattern: './app/app.component.scss', watched: true, included: true, served: true }
 
-        ],
+        //],
         preprocessors: {
-            './src/app/home/home.component.scss': ['@angular/cli']
+            'src/*/.scss': ['scss']
+        },
+        scssPreprocessor: {
+            options: {
+                sourceMap: true,
+                includePaths: ['bower_components']
+            }
         },
         client: {
             clearContext: false // leave Jasmine Spec Runner output visible in browser

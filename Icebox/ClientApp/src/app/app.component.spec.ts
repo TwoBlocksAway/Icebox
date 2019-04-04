@@ -1,31 +1,41 @@
-import { TestBed, async } from '@angular/core/testing';
+import { TestBed, async, ComponentFixture } from '@angular/core/testing';
+
+import { DebugElement } from '@angular/core';
+
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
 
 describe('AppComponent', () => {
+    let component: AppComponent;
+    let fixture: ComponentFixture<AppComponent>;
+    let de: DebugElement;
+
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [
-                AppComponent
+                AppComponent,
+                NavComponent,
+                HomeComponent
+
             ],
-        }).compileComponents();
+        })
+            .compileComponents();
     }));
 
-    it('should create the app', () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.debugElement.componentInstance;
-        expect(app).toBeTruthy();
-    });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(AppComponent);
+        component = fixture.componentInstance;
+        de = fixture.debugElement;
 
-    it(`should have as title 'ClientApp'`, () => {
-        const fixture = TestBed.createComponent(AppComponent);
-        const app = fixture.debugElement.componentInstance;
-        expect(app.title).toEqual('ClientApp');
-    });
-
-    it('should render title in a h1 tag', () => {
-        const fixture = TestBed.createComponent(AppComponent);
         fixture.detectChanges();
-        const compiled = fixture.debugElement.nativeElement;
-        expect(compiled.querySelector('h1').textContent).toContain('Welcome to ClientApp!');
+    });
+
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
+
+    it(`should have as title 'Icebox'`, () => {
+        expect(component.title).toEqual('Icebox');
     });
 });

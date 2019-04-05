@@ -29,16 +29,24 @@ describe('HomeComponent', () => {
         expect(component).toBeTruthy();
     });
 
+    //create a div#container
+
+    //create an h1#welcome
+
     it('should render title in h1#welcome', () => {
-        expect(de.nativeElement.querySelector('#welcome').textContent).toContain('Icebox');
+        expect(de.nativeElement.querySelector('#welcome').textContent).toContain('icebox');
     });
 
-    it('should render h1#welcome to be text aligned to `center`', () => {
-        expect(de.query(By.css('h1#welcome')).nativeElement.textAlign).toBe('center');
-    });
+    //should create input#searchBox
 
-    it('should render h1#welcome text color to be `blue`', () => {
-        expect(de.query(By.css('#welcome')).nativeElement.color).toBe('blue');
-    });
+    //input#searchbox should have placeholder `Search for a food product`
+
+    //should create button#searchBtn
+
+    //should create img#magnifySearch
+
+    //button#searchBtn should hold img#magnifySearch
+
+    //should create button#features
 
 });

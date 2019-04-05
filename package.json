@@ -1,0 +1,27 @@
+{
+  "name": "Icebox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "karma-sass-preprocessor": "^0.0.1"
+  },
+  "devDependencies": {
+    "karma-scss-preprocessor": "^4.0.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwoBlocksAway/Icebox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TwoBlocksAway/Icebox/issues"
+  },
+  "homepage": "https://github.com/TwoBlocksAway/Icebox#readme"
+}

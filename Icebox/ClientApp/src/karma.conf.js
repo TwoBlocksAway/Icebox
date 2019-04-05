@@ -12,15 +12,8 @@ module.exports = function (config) {
             require('karma-coverage-istanbul-reporter'),
             require('@angular-devkit/build-angular/plugins/karma'),
             require('karma-scss-preprocessor')
-        ],
-        //files: [
-        //    { pattern: './app/home/home.component.scss', watched: true, included: true, served: true },
-        //    { pattern: './app/app.component.scss', watched: true, included: true, served: true }
 
-        //],
-        preprocessors: {
-            'src/*/.scss': ['scss']
-        },
+        ],
         scssPreprocessor: {
             options: {
                 sourceMap: true,

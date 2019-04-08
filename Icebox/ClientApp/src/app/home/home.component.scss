@@ -1,9 +1,84 @@
+div#container {
+    height: 90vh;
+    text-align: center;
+}
 
 #welcome {
+    position: relative;
+    top: 30%;
     color: black;
-    text-align: center;
     font-weight: 200;
     font-size: 250%;
 }
+
+#searchGroupContainer {
+    text-align: initial;
+    position: relative;
+    top: 30%;
+    vertical-align: middle;
+}
+
+#searchGroup {
+    margin: 0 auto;
+    height: 45px;
+    width: 450px;
+    border-radius: 25px;
+    border: solid 2px #cecece;
+    padding-left: 15px;
+}
+#searchGroup:hover {
+    box-shadow: 2px 2px #cecece;
+    transition: all 0.2s linear;
+}
+
+#searchBox {
+    font-family: 'Raleway', sans-serif;
+    display: inline;
+    height: 43px;
+    width: 410px;
+    border: none;
+    color: black;
+    background-color: transparent;
+    box-shadow: none;
+}
+#searchBox:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+#magnifyingGlass {
+    transform: rotate(-35deg);
+    height: 30px;
+    vertical-align: middle;
+}
+#magnifyingGlass:hover {
+    content: url("../../assets/images/magnifyingGlass2.png");
+    cursor: pointer;
+}
+
+#featuresArrow {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ff000091;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+#featuresArrow:hover {
+    border-top: 20px solid #f00;
+    cursor: pointer;
+}
+
+
 
 

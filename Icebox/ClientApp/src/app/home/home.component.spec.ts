@@ -29,24 +29,17 @@ describe('HomeComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    //create a div#container
-
-    //create an h1#welcome
-
     it('should render title in h1#welcome', () => {
         expect(de.nativeElement.querySelector('#welcome').textContent).toContain('icebox');
     });
+    
+    it('should render placeholder in input#searchBox to be `Search for a food product`', () => {
+        expect(de.nativeElement.querySelector('#searchBox').placeholder).toContain('Search for a food product')
+    });
 
-    //should create input#searchBox
 
-    //input#searchbox should have placeholder `Search for a food product`
+    //button#searchBtn should hold img#magnifyingGlass
+    //  TODO: Make magnifying glass icon
 
-    //should create button#searchBtn
-
-    //should create img#magnifySearch
-
-    //button#searchBtn should hold img#magnifySearch
-
-    //should create button#features
 
 });

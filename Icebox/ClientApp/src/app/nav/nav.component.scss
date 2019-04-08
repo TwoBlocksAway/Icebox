@@ -1,1 +1,19 @@
+nav {
+    position: fixed;
+    width: 100%;
+}
 
+ul {
+    display: flex;
+    padding-right: 30px;
+    float: right;
+}
+
+li {
+    padding: 0px 15px 0px 15px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+}

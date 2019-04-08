@@ -3,7 +3,6 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DebugElement } from '@angular/core';
 
 import { HomeComponent } from './home.component';
-import { By } from '@angular/platform-browser';
 
 describe('HomeComponent', () => {
     let component: HomeComponent;
@@ -36,10 +35,5 @@ describe('HomeComponent', () => {
     it('should render placeholder in input#searchBox to be `Search for a food product`', () => {
         expect(de.nativeElement.querySelector('#searchBox').placeholder).toContain('Search for a food product')
     });
-
-
-    //button#searchBtn should hold img#magnifyingGlass
-    //  TODO: Make magnifying glass icon
-
 
 });

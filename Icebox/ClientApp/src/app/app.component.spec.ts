@@ -1,6 +1,7 @@
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 
 import { DebugElement } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -19,6 +20,7 @@ describe('AppComponent', () => {
                 HomeComponent
 
             ],
+            imports: [RouterTestingModule]
         })
             .compileComponents();
     }));
@@ -35,7 +37,7 @@ describe('AppComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it(`should have as title 'Icebox'`, () => {
-        expect(component.title).toEqual('Icebox');
+    it(`should have as title 'icebox'`, () => {
+        expect(component.title).toEqual('icebox');
     });
 });

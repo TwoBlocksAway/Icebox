@@ -1,0 +1,87 @@
+#loginContainer {
+    position: relative;
+    top: 30%;
+    border: 2px solid #ececec;
+    margin: 0 auto;
+    width: 20%;
+    padding: 40px;
+}
+
+#loginTitle {
+    color: #1c4a80;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.input-row {
+}
+
+.login-icons {
+    height: 30px;
+    vertical-align: middle;
+}
+
+.login-input {
+    font-family: 'Raleway', sans-serif;
+    width: 65%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 20px 20px 0px;
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+#forgotPasswordContainer {
+    text-align: end;
+    width: 90%;
+}
+#forgotPassword {
+    color: rgba(255, 0, 0, 0.7);
+    font-size: 65%;
+    font-weight: 700;
+    margin-bottom: 5vh;
+}
+
+#forgotPassword:hover {
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+#loginBtn {
+    width: 80%;
+    height: 50px;
+    color: white;
+    background-color: #1c4a80;
+    border: none;
+    box-shadow: none;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+#loginBtn:hover {
+    cursor: pointer;
+}
+
+#newAccount {
+    color: #1c4a80;
+    font-weight: 700;
+    margin: 10vh;
+}
+
+#newAccount:hover {
+    color: rgb(72, 199, 65);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+

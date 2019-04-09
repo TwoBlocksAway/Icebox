@@ -33,7 +33,11 @@ describe('HomeComponent', () => {
     });
     
     it('should render placeholder in input#searchBox to be `Search for a food product`', () => {
-        expect(de.nativeElement.querySelector('#searchBox').placeholder).toContain('Search for a food product')
+        expect(de.nativeElement.querySelector('#searchBox').placeholder).toBe('Search for a food product')
+    });
+
+    it('should have input#searchBox be of type text', () => {
+        expect(de.nativeElement.querySelector('#searchBox').type).toBe('text');
     });
 
 });

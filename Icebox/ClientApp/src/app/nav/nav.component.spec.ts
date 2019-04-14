@@ -1,10 +1,13 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { DebugElement } from '@angular/core';
+
 import { NavComponent } from './nav.component';
 
 describe('NavComponent', () => {
     let component: NavComponent;
     let fixture: ComponentFixture<NavComponent>;
+    let de: DebugElement;
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
@@ -16,6 +19,8 @@ describe('NavComponent', () => {
     beforeEach(() => {
         fixture = TestBed.createComponent(NavComponent);
         component = fixture.componentInstance;
+        de = fixture.debugElement;
+
         fixture.detectChanges();
     });
 
@@ -23,21 +28,32 @@ describe('NavComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    //should create ul#nav
+    it('a#signup should render contents of `Sign Up`', () => {
+        expect(de.nativeElement.querySelector('#signUp').textContent).toContain('Sign Up');
+    });
 
-    //should create li#signUp
+    it('a#login should render contents of `Login`', () => {
+        expect(de.nativeElement.querySelector('#login').textContent).toContain('Login');
+    });
 
-    //li#signUp contents should be `Sign-up`
+    it('a#profile should render contents of `Profile`', () => {
+        expect(de.nativeElement.querySelector('#profile').textContent).toContain('Profile');
+    });
 
-    //should create li#login
+    it('a# should render contents of `Logout`', () => {
+        expect(de.nativeElement.querySelector('#logout').textContent).toContain('Logout');
+    });
 
-    //li#login contents should be `Login`
+    //signup should route to signup page
 
-    //CONDITIONS (changes depending on user login status)
-    //  WHEN USER NOT LOGGED IN
-    //      ul#nav should show `Sign-up` and `Login`
-    //
-    //  WHEN USER IS LOGGED IN
-    //      ul#nav should show `Profile` and `Logout`
+    //login should route to login page
+
+    //login should change nav bar elements (should show `Profile` and `Logout`)
+
+    //profile should route to user profile page
+
+    //logout should route to home page
+
+    //logout should change nav bar elements (should show `Sign Up` and `Login`)
 
 });
